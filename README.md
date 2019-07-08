@@ -78,7 +78,9 @@ mkdir build && cd build
 cmake ..
 
 # compile
-make
+make 
+# you can also run more threads for faster compilation (make -j <no_of_threads>)
+# For example : make -j 4
 ```
 
 

@@ -17,7 +17,7 @@ if (NOT MONERO_DIR)
     set(MONERO_DIR ~/Rixe)
 endif()
 
-message(STATUS MONERO_DIR ": ${MONERO_DIR}")
+message(STATUS RIXE_DIR ": ${MONERO_DIR}")
 
 if (NOT MONERO_SOURCE_DIR)
     set(MONERO_SOURCE_DIR ${MONERO_DIR}

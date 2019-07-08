@@ -50,7 +50,7 @@ foreach (l ${LIBS})
 
 	set(Xmr_${L}_LIBRARIES ${Xmr_${L}_LIBRARY})
 
-	message(STATUS FindMonero " Xmr_${L}_LIBRARIES ${Xmr_${L}_LIBRARY}")
+	message(STATUS FindRixe " Rixe_${L}_LIBRARIES ${Rixe_${L}_LIBRARY}")
 
 	add_library(${l} STATIC IMPORTED)
 	set_property(TARGET ${l} PROPERTY IMPORTED_LOCATION ${Xmr_${L}_LIBRARIES})
@@ -58,7 +58,7 @@ foreach (l ${LIBS})
 endforeach()
 
 if (EXISTS ${MONERO_BUILD_DIR}/src/ringct/libringct_basic.a)
-	message(STATUS FindMonero " found libringct_basic.a")
+	message(STATUS FindRixe " found libringct_basic.a")
 	add_library(ringct_basic STATIC IMPORTED)
 	set_property(TARGET ringct_basic
 			PROPERTY IMPORTED_LOCATION ${MONERO_BUILD_DIR}/src/ringct/libringct_basic.a)
